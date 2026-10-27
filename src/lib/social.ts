@@ -1,0 +1,38 @@
+export const socialLinks = [
+  {
+    id: "yt",
+    label: "YouTube",
+    href: "https://www.youtube.com/@makler-winterat",
+    navWidth: 22.674,
+    navHeight: 15.873,
+    cardWidth: 31.491,
+    cardHeight: 22.045,
+  },
+  {
+    id: "fb",
+    label: "Facebook",
+    href: "https://www.facebook.com/makler.winter",
+    navWidth: 10,
+    navHeight: 18,
+    cardWidth: 14,
+    cardHeight: 25,
+  },
+  {
+    id: "ig",
+    label: "Instagram",
+    href: "https://www.instagram.com/winter_versicherungsmakler/",
+    navWidth: 17.516,
+    navHeight: 17.503,
+    cardWidth: 24,
+    cardHeight: 25,
+  },
+  {
+    id: "in",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/winterversicherungsmakler",
+    navWidth: 17.624,
+    navHeight: 16.845,
+    cardWidth: 24.477,
+    cardHeight: 23.396,
+  },
+] as const;

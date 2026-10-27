@@ -1,0 +1,1425 @@
+{
+  "impressum": [
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Medienunternehmer und Herausgeber"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Winter Versicherungsmakler Ges.m.b.H."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Obere Klaus 244"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " A-8970 Schladming"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Telefon: 03687/23753"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " E-Mail: "
+        },
+        {
+          "t": "link",
+          "v": "office@makler-winter.at",
+          "href": "mailto:office@makler-winter.at"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Website: "
+        },
+        {
+          "t": "link",
+          "v": "www.makler-winter.at",
+          "href": "https://www.makler-winter.at"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Unternehmensgegenstand: Versicherungsmakler und"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Berater in Versicherungsangelegenheiten"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Verleihungsstaat: Österreich"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Firmenbuchnummer: FN 80919z"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Firmenbuchgericht: Landesgericht Leoben"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Firmensitz: Schladming"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " UID Nr.: ATU56191258"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " GISA Zahl: 20958626"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": " Rechtsform: Gesellschaft mit beschränkter Haftung"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Geschäftsführer: Karl Winter, Carl Philip Winter"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Behörden und Vorschriften"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Zuständige Kammer: Wirtschaftskammer Steiermark"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Zuständige Gewerbebehörde: Bezirkshauptmannschaft Liezen, Politische Expositur Gröbming"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Anwendbare gewerbe- und berufsrechtliche Vorschriften:"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Gewerbeordnung (GewO) ("
+        },
+        {
+          "t": "link",
+          "v": "www.ris.bka.gv.at",
+          "href": "http://www.ris.bka.gv.at/"
+        },
+        {
+          "t": "text",
+          "v": ")"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Maklergesetz (MaklerG) ("
+        },
+        {
+          "t": "link",
+          "v": "www.ris.bka.gv.at",
+          "href": "http://www.ris.bka.gv.at/"
+        },
+        {
+          "t": "text",
+          "v": ")"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Versicherungsvermittler – Verordnung ("
+        },
+        {
+          "t": "link",
+          "v": "www.ris.bka.gv.at",
+          "href": "http://www.ris.bka.gv.at/"
+        },
+        {
+          "t": "text",
+          "v": ")"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Standesregeln für Versicherungsvermittlung ("
+        },
+        {
+          "t": "link",
+          "v": "www.ris.bka.gv.at",
+          "href": "http://www.ris.bka.gv.at/"
+        },
+        {
+          "t": "text",
+          "v": ")"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Beschwerdestelle"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Beschwerdestelle über Versicherungsvermittler im BMDW,"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Bundesministerium für Digitalisierung und Wirtschaftsstandort, Abteilung IV/1 (Gewerberecht)"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Stubenring 1, 1010 Wien"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "MMag. Stefan Trojer"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "01-71100/805782"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "stefan.trojer@oesterreich.gv.at"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Abteilung Gewerberecht: gewerbe@bmdw.gv.at"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Gender-Klausel"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir legen großen Wert auf geschlechtliche Gleichberechtigung. Aufgrund der Lesbarkeit der Texte wird bei Bedarf nur eine Geschlechtsform gewählt. Dies impliziert keine Benachteiligung des jeweils anderen Geschlechts."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Rechtlicher Hinweis"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Die Winter Versicherungsmakler GmbH prüft und aktualisiert die Informationen auf ihrer Websites laufend. Trotz aller Sorgfalt können sich Daten inzwischen verändert haben. Eine Haftung oder Garantie für die Aktualität, Richtigkeit und Vollständigkeit der zur Verfügung gestellten Informationen kann daher nicht übernommen werden. Es wird keine Gewähr für die Verfügbarkeit oder den Betrieb der gegenständlichen Webseite und ihrer Inhalte übernommen. Jegliche Haftung für unmittelbare, mittelbare oder sonstige Schäden, unabhängig von deren Ursachen, die aus der Benutzung oder Nichtverfügbarkeit der Daten und Informationen dieser Website erwachsen, wird - soweit rechtlich zulässig - ausgeschlossen. Gleiches gilt für alle anderen Webseiten, auf die mit Hyperlinks verwiesen wird. Die Winter Versicherungsmakler GmbH ist für den Inhalt der Internetseiten, die per Hyperlinks erreicht werden können, nicht verantwortlich. Zudem behält sich die Winter Versicherungsmakler GmbH das Recht vor, Änderungen oder Ergänzungen der bereitgestellten Informationen vorzunehmen."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Sämtliche auf der Website abrufbaren Informationen stellen keine Beratung über Produkte, sondern ausschließlich Informationen allgemeiner Art dar. Sofern eine verbindliche Informationen und/oder Beratung unsere Dienstleistungen und Produkte betreffend gewünscht wird, bitten wir um persönliche Kontaktaufnahme."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Inhalt und Aufbau der Webseiten sind urheberrechtlich geschützt. Die Vervielfältigung von Informationen oder Daten, insbesondere die Verwendung von Texten, Textteilen oder Bildmaterial, bedarf der vorherigen Zustimmung der Winter Versicherungsmakler GmbH."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "EU-Offenlegungsverordnung"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Die Verordnung (EU) Nr. 2019/2088 Offenlegungsverordnung vom 27. November 2019 über nachhaltigkeitsbezogene Offenlegungspflichten im Finanzdienstleistungssektor, ist eine "
+        },
+        {
+          "t": "link",
+          "v": "EU-Verordnung",
+          "href": "https://de.wikipedia.org/wiki/Verordnung_(EU)"
+        },
+        {
+          "t": "text",
+          "v": " über die Veröffentlichung von Informationen der Finanzmarktteilnehmer zur "
+        },
+        {
+          "t": "link",
+          "v": "Nachhaltigkeit",
+          "href": "https://de.wikipedia.org/wiki/Nachhaltigkeit"
+        },
+        {
+          "t": "text",
+          "v": " ihrer Investitionsentscheidungen."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir verfolgen derzeit keine eigenständige Nachhaltigkeitsstrategie bei unserer Versicherungsberatertätigkeit. Auf Grund der noch fehlenden Technischen Regulierungsstandards der EU werden wir den weiteren Verlauf aber selbstverständlich beobachten und zu gegebener Zeit eine Strategie entwickeln."
+        }
+      ]
+    }
+  ],
+  "datenschutz": [
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Mit diesen Hinweisen informieren wir Sie über die Verarbeitung Ihrer personenbezogenen Daten im Rahmen Ihrer Vertragsbeziehung mit uns und über die Ihnen zustehenden Rechte gemäß der am 25.05.2018 in Kraft tretenden EU-Datenschutzgrundverordnung (DSGVO)."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir erfassen und verarbeiten Ihre personenbezogenen Daten, die wir über den Versicherungsantrag oder über Auskünfte Dritter erhalten, zur (vor-)vertraglichen Bedarfsanalyse, Beratung, Abschluss und Bearbeitung von Versicherungsverträgen (auch Bausparanträge) sowie die Abwicklung von Versicherungsfällen. Die Verarbeitung erfolgt zweckgebunden unter Beachtung der DSGVO, des österreichischen Datenschutzgesetzes (DSG), der datenschutzrechtlich relevanten Bestimmungen des Versicherungsvertragsgesetzes (VersVG) sowie aller weiteren maßgeblichen Gesetze."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir sind im Sinne der DSGVO Verantwortlicher für die Verarbeitung Ihrer personenbezogenen Daten:"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Winter Versicherungsmakler Ges.m.b.H."
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Obere Klaus 244, 8970 Schladming"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Tel. +43 (3687) 23 753-0"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Fax +43 (3687) 23 753-450"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "link",
+          "v": "office@makler-winter.at",
+          "href": "mailto:office@makler-winter.at"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Kontaktdaten unseres Datenschutzbeauftragten:"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": "Philip Winter"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Winter Versicherungsmakler Ges.m.b.H."
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Obere Klaus 244, 8970 Schladming"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "link",
+          "v": "philip.winter@makler-winter.at",
+          "href": "mailto:philip.winter@makler-winter.at"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Für Fragen zur Verarbeitung Ihrer Daten kontaktieren Sie bitte ab dem 25.05.2018 unsere verantwortliche Abteilung per Post unter der o. a. Adresse mit dem Zusatz „Datenschutz“ oder per E-Mail unter "
+        },
+        {
+          "t": "link",
+          "v": "office@makler-winter.at",
+          "href": "mailto:office@makler-winter.at"
+        },
+        {
+          "t": "text",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Erfüllung/Abwicklung von Versicherungsantrag, Maklervertrag, Versicherungsvertrag"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Bearbeitung/Polizzierung/Stornierung/Versicherungsbestätigung"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Bearbeitung von Schadenregulierung"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Erfüllung gesetzlicher Sorgfaltspflichten und Obliegenheiten, insbesondere nach dem MaklerG (§§ 3ff MaklerG)"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Erfüllung steuer- und abgabenrechtlicher Verpflichtungen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Funktionieren des internen Rechnungswesens"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Pflichtangaben im Rahmen der gesetzlich zwingenden amtlichen Statistik"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Erfüllung der Sorgfaltspflichten und Obliegenheiten, insbesondere nach dem MaklerG §§3ff MaklerG)"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Erfüllung steuer- und abgabenrechtlicher Verpflichtungen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Funktionieren des internen Rechnungswesens"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Schad- und Klagloshaltung aus erbrachter Beratungs-/Vermittlungsleistung"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Gewährleistung eines sicheren Betriebes der EDV-Anlagen und EDV-Anwendung zur Sicherstellung einer"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "ordnungsgemäßen Vertragserfüllung mit Kunden/Lieferanten/Versicherern"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Verarbeitung von Gesundheitsdaten (Gesundheitsfragebogen, Gesundheitsdaten/Schadendaten, Arztbefunde, Krankenstandsdaten, Atteste, etc.) durch die Verantwortlichen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Übermittlung von Gesundheitsdaten"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " (Gesundheitsfragebogen, Gesundheitsdaten/Schadendaten, Arztbefunde, Krankenstandsdaten, Atteste, etc.) an Versicherungsunternehmen mit denen aufrechte Vertragsverhältnisse des Kunden bestehen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Einsichtnahme in Gesundheitsdaten"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " (Gesundheitsfragebogen, Gesundheitsdaten/Schadendaten, Arztbefunde, Krankenstandsdaten, Atteste, etc.) durch externe IT-Systembetreuer sowie externe Dienstleister"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Übermittlung durch die Verantwortlichen zu Werbezwecken"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Übermittlung an mit den Verantwortlichen verbundene Unternehmen und deren Kooperationspartner zu werbezwecken"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Gewährleistung eines sicheren Betriebes der EDV-Anlagen und EDV-Anwendungen zur Sicherstellung einer ordnungsgemäßen Vertragserfüllung mit Kunden/Lieferanten/Versicherern"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Versicherungsunternehmen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Makler/Vertriebspartner"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Steuerliche/rechtliche Vertretung"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Inkassounternehmen"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Banken"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Externe Dienstleister (IT-Systembetreuer, etc)"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Gerichte/Verwaltungsbehörden/Finanzämter"
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Statistik Austria (gesetzlich zwingende amtliche Statistik)"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "ol",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "Welche personenbezogenen Daten verwenden wir?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Wir verarbeiten zum Zweck der Vertragsabwicklung, Vertragsdaten und Angaben Dritter (z.B. von Ärzten, Sachverständigen und Versicherungsvermittlern). Darunter fallen z.B. Name, Geburtsdatum, Adresse, Daten über das versicherte Interesse (je nach Versicherungssparte KFZ, Gebäude, versicherte Person, etc.), Versicherungssumme, Vertragslaufzeit, Versicherungsprämie, Bankverbindung und Kontaktdaten (z.B. Telefonnummern, E-Mailadressen, etc.)."
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Bei Eintritt eines Schadens ermitteln und verarbeiten wir zusätzlich Ihre Angaben zum Versicherungsfall (z.B. Schadendatum, Schadensursache, Fotos) sowie die Leistungsdaten (z.B. Höhe der Versicherungsleistung, Bankverbindung). Das können – soweit erforderlich – auch Angaben von Dritten sein, die mit der Feststellung des Leistungsfalles beauftragt sind (z.B. Sachverständige), dazu Auskunft geben können (Behörden, Zeugen, etc.) oder im Zusammenhang mit der Leistungserbringung stehen (Reparaturwerkstätten, Handwerker, Ärzte, Krankenhäuser, etc.)."
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Wir erfassen nur die notwendigen Daten, das heißt, dass im Einzelfall auch mit weniger als den oben beschriebenen Daten das Auslangen gefunden werden kann."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Herkunft personenbezogener Daten"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Sofern Sie Versicherungskunde oder Interessent sind, werden jene personenbezogenen Daten verarbeitet, die wir direkt von Ihnen erhalten. Die Daten namentlich genannter mitversicherter Personen (z.B. Ehegatten, Lebensgefährten, Kinder, usw.) erhalten wir üblicherweise ebenfalls direkt durch den Versicherungsnehmer. Weiters werden auch Informationen und Daten verarbeitet, die beispielsweise aus nachstehenden Quellen stammen:Versicherungsgesellschaften; Gerichte oder Behörden; natürliche und juristische Personen, die mit der Risikobewertung oder Schadenregulierung betraut sind (z.B. Sachverständige, Schadenregulierungsunternehmen, Werkstätten, Reparaturunternehmen); öffentlich zugängliche Quellen (z.B. Grundbuch, Firmenbuch, ZMR); öffentlich zugängliche Informationen (z.B. aus dem Internet); Kooperationspartner.Sind Sie Anspruchsteller (geschädigter Dritter) in einem Haftpflichtversicherungsfall, oder sonst in anderer Art als Versicherungsnehmer an einem Schadenfall beteiligt, können Ihre Daten von unserem Kunden, einer Versicherungsgesellschaft oder einer anderen mit der Schadenregulierung in Verbindung stehenden natürlichen oder juristischen Person erhalten werden."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Zu welchem Zweck und auf welcher Rechtsgrundlage werden Daten erfasst und verwendet?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " 3.1 Vertragserfüllung (Art. 6 Abs 1 lit b DSGVO) 3.2 Erfüllung gesetzlicher Verpflichtungen (Art. 6 Abs 1 lit c DSGVO) 3.3 Berechtigte Interesse der Verantwortlichen (Art. 6 Abs 1 lit f DSGVO) 3.4 Einwilligung (art. 6 Abs 1 lit a DSGVO) "
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "An wen übermitteln wir Daten?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Eine Datenübermittlung an Dritte kann erforderlich sein. Eine Datenübermittlung erfolgt in diesen Fällen an die nachstehenden Kategorien von Empfängern: "
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Wo werden Daten gespeichert? Werden Daten an Empfänger in Drittländern übermittelt?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Die verarbeiteten Daten werden in unserem unternehmenseigenen Rechenzentrum in Schladming gespeichert."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Wie lange werden Daten gespeichert?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Sämtliche Daten aus dem Vertragsverhältnis werden bis zum Ende des Vertragsverhältnisses, darüber hinaus aber jedenfalls bis zum Ablauf der steuerrechtlichen Aufbewahrungsfrist (7 Jahre) und dem Ablauf aller schadenersatz- und bereicherungsrechtlichen Verjährungsfristen (3 bzw. 30 Jahre) gespeichert."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Welche Rechte stehen Ihnen als betroffene Person nach dem Datenschutzrecht zu?"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Nach den gesetzlichen Bestimmungen stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf der erteilten Einwilligung und Widerspruch zu, die bei den Verantwortlichen geltend gemacht werden können. Die betroffenen Personen müssen sich identifizieren und zur Identifikation beitragen, damit sichergestellt ist, dass die Antwort auch tatsächlich an die betroffene Person adressiert wird. Gegen eine Verarbeitung von Daten, die gegen das Datenschutzrecht verstößt oder datenschutzrechtliche Ansprüche sonst in einer Weise verletzt, besteht eine Beschwerdemöglichkeit bei der zuständigen Aufsichtsbehörde. In Österreich ist dies die Datenschutzbehörde."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Cookiebot"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Bei Betreten unserer Website informieren wir Sie über die Arten der von uns verwendeten Cookies und geben Ihnen die Möglichkeit, einzelnen Arten von Cookies zuzustimmen oder nicht. Wir laden nicht notwendige Cookies erst dann, wenn Sie Ihrer Verwendung der Art nach zugestimmt haben. ‍Unsere Website nutzt die Cookie-Consent-Technologie von Cookiebot, um Ihre Einwilligung i.S.v. Art. 6 Abs. 1 S. 1 lit. a DSGVO zur Speicherung bestimmter Cookies in Ihrem Browser einzuholen und diese datenschutzkonform zu dokumentieren. Anbieter dieser Technologie ist Cookiebot – Cybot A/S, Havnegade 39, 1058 Kopenhagen, Dänemark (im Folgenden Cookiebot). Wenn Sie unsere Website betreten, wird ein Cookiebot-Cookie in Ihrem Browser gespeichert, in dem die von Ihnen erteilten Einwilligungen oder der Widerruf dieser Einwilligungen gespeichert werden. Diese Daten werden nicht an den Anbieter von Cookiebot weitergegeben. Die erfassten Daten werden gespeichert, bis Sie uns zur Löschung auffordern bzw. das Cookiebot-Cookie selbst löschen oder der Zweck für die Datenspeicherung entfällt. Zwingende gesetzliche Aufbewahrungsfristen bleiben unberührt. Details zur Datenverarbeitung von Cookiebot finden Sie unter "
+          },
+          {
+            "t": "link",
+            "v": "https://www.cookiebot.com/de/privacy-policy/",
+            "href": "https://www.cookiebot.com/de/privacy-policy/"
+          },
+          {
+            "t": "text",
+            "v": " . Der Einsatz der Cookiebot-Cookie-Consent-Technologie erfolgt, um die gesetzlich vorgeschriebenen Einwilligungen für den Einsatz von Cookies einzuholen. Rechtsgrundlage hierfür ist Art. 6 Abs. 1 S. 1 lit. c DSGVO. "
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Google reCAPTCHA"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Wir verwenden den Google-Dienst reCaptcha, um festzustellen, ob ein Mensch oder Bot die Webseite besucht. Google prüft anhand folgender Daten, ob Sie ein Mensch oder ein Bot sind: IP-Adresse des verwendeten Endgeräts, die Webseite, die Sie bei uns besuchen und auf der das Captcha eingebunden ist, das Datum und die Dauer des Besuchs, die Erkennungsdaten des verwendeten Browser- und Betriebssystem-Typs, Google-Account, wenn Sie bei Google eingeloggt sind sowie Mausbewegungen auf den reCaptcha-Flächen. Rechtsgrundlage für die beschriebene Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO. Es besteht ein berechtigtes Interesse auf unserer Seite an dieser Datenverarbeitung, die Sicherheit unserer Webseite zu gewährleisten und uns vor automatisierten Eingaben (Angriffen) zu schützen. "
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Google Analytics"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Zur bedarfsgerechten Gestaltung unserer Webseiten verwenden wir das Webanalysetool „Google Analytics“. Google Analytics erstellt Nutzungsprofile auf Grundlage von Pseudonymen. Hierzu werden permanente Cookies auf Ihrem Endgerät gespeichert und von uns ausgelesen. Auf diese Weise sind wir in der Lage, wiederkehrende Besucher zu erkennen und als solche zu zählen. Im Rahmen von Google Analytics unterstützen uns Google Ireland Limited und Google LLC. (USA) als Auftragsverarbeiter nach Art. 28 DSGVO. Die Datenverarbeitung kann daher auch außerhalb der EU bzw. des EWR stattfinden. Im Hinblick auf Google LLC kann aufgrund der Verarbeitung in den USA kein angemessenes Datenschutzniveau angenommen werden. Es besteht das Risiko, dass Behörden auf die Daten zu Sicherheits- und Überwachungszwecken zugreifen, ohne dass Sie hierüber informiert werden oder Rechtsmittel einlegen können. Bitte beachten Sie dies, wenn Sie sich dazu entscheiden, Ihre Einwilligung in unsere Nutzung von Google Analytics abzugeben. Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung gem. Art. 6 Abs. 1 S. 1 lit. a DSGVO, sofern Sie Ihre Einwilligung über unser Banner abgegeben haben. Die Übermittlung in ein Drittland erfolgt auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sie können Ihre Einwilligung jederzeit widerrufen. "
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Youtube"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Zur umfassenden Bewerbung unseres Unternehmens greifen wir auf das Angebot von Youtube Videos zurück. Unternehmen: YouTube LLC, 901 Cherry Avenue, San Bruno, CA 94066, USA, vertreten durch Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Auf unserer Website nutzen wir die Möglichkeit von Youtube, Videos auf unserer Seite direkt durch Einbettung via Frame anzeigen zu können. YouTube verwendet Cookies, die auf Ihrem Endgerät gespeichert werden, um eine Nutzungsanalyse zu erstellen. Gleichzeitig wird beim Aufruf des eingebetteten Youtube-Inhalts eine Verbindung zum Google Werbenetzwerk „DoubleClick“ hergestellt. Beim Laden unserer Website wird eine Verbindung zu den Servern von Google aufgebaut und Ihre IP-Adresse übertragen. Daten können dementsprechend in die USA übertragen werden."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Kontaktaufnahme bei Bewerbungen"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Wenn Sie mit uns Kontakt aufnehmen, um uns Ihre Bewerbung als Mitarbeiter:in z.B. per E-Mail zu übersenden, werden die von Ihnen angegebenen Daten (z.B. Name, E-Mail-Adresse, gewünschter Einsatzort etc.), Ihre Nachricht sowie die übermittelten Bewerbungsunterlagen ausschließlich zum Zwecke der Bearbeitung und Abwicklung Ihrer Bewerbungsanfrage verarbeitet. Rechtsgrundlage der Datenverarbeitung ist vorrangig Art. 6 Abs. 1 S.1 lit. a) DSGVO. Demnach ist die Verarbeitung von Daten zulässig, die im Zusammenhang mit der Entscheidung über die Begründung eines Beschäftigungsverhältnisses erforderlich ist. Sollten die Daten nach Abschluss des Bewerbungsverfahrens ggf. zur Rechtsverfolgung notwendig sein, kann eine Datenverarbeitung zur Wahrnehmung unserer berechtigten Interessen nach Art. 6 Abs. 1 f) DSGVO erfolgen, nämlich zur Geltendmachung und/oder Abwehr von Ansprüchen."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Datentransfer in die USA"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Wir informieren hiermit ausdrücklich, dass der Europäische Gerichtshof das US Privacy Shield für ungültig erklärt hat. Aufgrund weitreichender Zugriffsbefugnisse der US-Sicherheitsbehörden auf elektronisch gespeicherte Daten in den USA, stellt die USA kein ausreichendes Datenschutzniveau dar. Wir weisen insbesondere auf die Zugriffsmöglichkeiten von US-Behörden auf Ihre Daten sowie auf die fehlenden Möglichkeiten Rechte gegenüber amerikanischen Behörden aufgrund nachrichtendienstlicher Überwachungsmaßnahmen gerichtlich geltend zu machen hin. Rechtsgrundlage ist Ihre ausdrückliche Einwilligung nach Art. 49 Abs. 1 S. 1 lit. a. Weiterhin hat der Europäische Gerichtshof entschieden, dass der Betreiber einer Webseite grundsätzlich für alle Verarbeitungen personenbezogener Daten der Nutzer seiner Webseite verantwortlich ist, auch dann, wenn sie nicht von ihm selbst durchgeführt werden. Wir informieren daher bei der Verarbeitung über die aufgeführten Tools über die gemeinsame Verantwortlichkeit nach Art. 26 DSGVO unseres Unternehmens und die aufgeführten Unternehmen. Mit Ihrem Einverständnis übermitteln wir personenbezogene Daten über die in der Datenschutzerklärung ausgewiesenen Tools an die entsprechenden Unternehmen mit Sitz in den USA."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Änderung der Datenschutzerklärung"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " Unsere Richtlinien zum Schutz Ihrer persönlichen Daten werden wir von Zeit zu Zeit überarbeiten, um diese an den Stand der Technik oder an veränderte rechtliche Rahmenbedingungen anzupassen. Wir empfehlen Ihnen deshalb, sich regelmäßig über Änderungen auf dieser Seite zu informieren."
+          }
+        ]
+      ]
+    }
+  ],
+  "barrierefreiheit": [
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Erklärung zur digitalen Barrierefreiheit"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Die Winter Versicherungsmakler Ges.m.b.H. ist bemüht, ihre Website "
+        },
+        {
+          "t": "link",
+          "v": "www.makler-winter.at",
+          "href": "https://www.makler-winter.at"
+        },
+        {
+          "t": "text",
+          "v": " möglichst barrierefrei zugänglich zu machen. Grundlage dafür bilden das Web-Zugänglichkeits-Gesetz (WZG) sowie die Richtlinie (EU) 2016/2102, soweit diese auf private Unternehmen anwendbar sind. Die technische Umsetzung orientiert sich an den Web Content Accessibility Guidelines (WCAG) 2.1, insbesondere an der Konformitätsstufe AA."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Als Versicherungsmakler ist es unser Ziel, unseren Kundinnen und Kunden sowie allen Interessierten den Zugang zu Informationen über unsere Dienstleistungen, unsere Standorte und Kontaktmöglichkeiten möglichst einfach und verständlich zu ermöglichen. Nach derzeitigem Stand unserer internen Überprüfung erfüllt die Website die wesentlichen Anforderungen weitgehend; einzelne Bereiche befinden sich jedoch noch in Optimierung."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "1. Stand der Vereinbarkeit mit Barrierefreiheitsstandards"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Unsere Website wird laufend weiterentwickelt, dennoch bestehen aktuell noch einzelne Barrieren. Dazu zählen unter anderem:"
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "PDF-Dokumente und Formulare: Viele Dokumente sind derzeit noch nicht vollständig barrierefrei."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Unterlagen von Dritten: Anträge, Produktinformationen, Formulare oder Flyer anderer Versicherungsunternehmen"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " liegen außerhalb unseres Einflussbereichs und können nicht barrierefrei sein."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Grafiken und visuelle Elemente: Nicht alle grafischen Inhalte entsprechen den geltenden Kontrast-"
+          },
+          {
+            "t": "br"
+          },
+          {
+            "t": "text",
+            "v": " und Strukturvorgaben."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "Navigation: Einige Funktionen werden aktuell überarbeitet, um die Bedienbarkeit weiter zu verbessern."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir arbeiten kontinuierlich daran, die Zugänglichkeit unserer Inhalte zu erhöhen."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "2. Hinweis zu PDF-Dokumenten, Formularen und Unterlagen Dritter"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Auf unserer Website stellen wir teilweise Dokumente bereit, die von externen Versicherungsgesellschaften erstellt werden (z. B. Anträge, Leistungsformulare, Produktblätter, Merkblätter oder Flyer). Da wir auf deren Inhalt und Format keinen Einfluss haben, übernehmen wir keine Verantwortung für deren Barrierefreiheit. Auch intern bereitgestellte Unterlagen – etwa Informationsblätter, Flyer oder Formulare – sind nicht zwingend barrierefrei. Diese Dokumente stellen keine offiziellen oder gesetzlich verpflichtenden Veröffentlichungen dar, weshalb sie nicht in barrierefreier Form vorliegen müssen."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "3. Hinweis zu Bildern und fehlenden Alt-Texten"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Die auf unserer Website verwendeten Fotos dienen ausschließlich der optischen Gestaltung und enthalten keine inhaltlich relevanten Informationen. Aus diesem Grund verfügen diese Bilder bewusst über keine Alt-Texte, da ihr Fehlen die Zugänglichkeit der fachlichen Inhalte nicht beeinträchtigt."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "4. Kontakt und Feedback zur Barrierefreiheit"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Sollten Ihnen Barrieren auf unserer Website auffallen oder benötigen Sie bestimmte Informationen in einer alternativen Form, kontaktieren Sie uns bitte:"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Winter Versicherungsmakler Ges.m.b.H."
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Obere Klaus 244"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " 8970 Schladming"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "E-Mail: office@makler-winter.at"
+        },
+        {
+          "t": "br"
+        },
+        {
+          "t": "text",
+          "v": " Telefon: +43 (0)3687 / 23753"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Wir prüfen Ihre Anfrage und stellen Ihnen – soweit möglich – eine barrierefreie Alternative bereit."
+        }
+      ]
+    }
+  ],
+  "cookie": [
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Diese Webseite verwendet Cookies. Wir verwenden Cookies, um Inhalte und Anzeigen zu personalisieren, Funktionen für soziale Medien anbieten zu können und die Zugriffe auf unsere Website zu analysieren. Außerdem geben wir Informationen zu Ihrer Verwendung unserer Website an unsere Partner für soziale Medien, Werbung und Analysen weiter. Unsere Partner führen diese Informationen möglicherweise mit weiteren Daten zusammen, die Sie ihnen bereitgestellt haben oder die sie im Rahmen Ihrer Nutzung der Dienste gesammelt haben.&nbsp;"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Cookies sind kleine Textdateien, die von Webseiten verwendet werden, um die Benutzererfahrung effizienter zu gestalten. Laut Gesetz können wir Cookies auf Ihrem Gerät speichern, wenn diese für den Betrieb dieser Seite unbedingt notwendig sind. Für alle anderen Cookie-Typen benötigen wir Ihre Erlaubnis. Diese Seite verwendet unterschiedliche Cookie-Typen. Einige Cookies werden von Drittparteien platziert, die auf unseren Seiten erscheinen. Sie können Ihre Einwilligung jederzeit von der Cookie-Erklärung auf unserer Website ändern oder widerrufen.Erfahren Sie in unserer Datenschutzrichtlinie mehr darüber, wer wir sind, wie Sie uns kontaktieren können und wie wir personenbezogene Daten verarbeiten.Bitte geben Sie Ihre Einwilligungs-ID und das Datum an, wenn Sie uns bezüglich Ihrer Einwilligung kontaktieren."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Notwendig"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Notwendige Cookies helfen dabei, eine Webseite nutzbar zu machen, indem sie Grundfunktionen wie Seitennavigation und Zugriff auf sichere Bereiche der Webseite ermöglichen. Die Webseite kann ohne diese Cookies nicht richtig funktionieren."
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "CookieConsent (Cookiebot): Speichert den Zustimmungsstatus des Benutzers für Cookies auf der aktuellen Domäne. Speicherdauer: 1 Jahr. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "PHPSESSID (www.makler-winter.at): Behält die Zustände des Benutzers bei allen Seitenanfragen bei. Speicherdauer: Sitzung. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "rc::a (Google): Dieser Cookie wird verwendet, um zwischen Menschen und Bots zu unterscheiden. Dies ist vorteilhaft für die Website, um gültige Berichte über die Nutzung Ihrer Website zu erstellen. Speicherdauer: Beständig. Typ: HTML Local Storage."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "rc::c (Google): Dieser Cookie wird verwendet, um zwischen Menschen und Bots zu unterscheiden. Speicherdauer: Sitzung. Typ: HTML Local Storage."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Statistiken"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Statistik-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden."
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "_ga (Google): Registriert eine eindeutige ID, die verwendet wird, um statistische Daten dazu, wie der Besucher die Website nutzt, zu generieren. Speicherdauer: 2 Jahre. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "_ga_# (Google): Sammelt Daten dazu, wie oft ein Benutzer eine Website besucht hat, sowie Daten für den ersten und letzten Besuch. Von Google Analytics verwendet. Speicherdauer: 2 Jahre. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "_gat (Google): Wird von Google Analytics verwendet, um die Anforderungsrate einzuschränken Speicherdauer: 1 Tag. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "_gid (Google): Registriert eine eindeutige ID, die verwendet wird, um statistische Daten dazu, wie der Besucher die Website nutzt, zu generieren. Speicherdauer: 1 Tag. Typ: HTTP-Cookie."
+          }
+        ]
+      ]
+    },
+    {
+      "type": "h2",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Marketing"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "parts": [
+        {
+          "t": "text",
+          "v": "Marketing-Cookies werden verwendet, um Besuchern auf Webseiten zu folgen. Die Absicht ist, Anzeigen zu zeigen, die relevant und ansprechend für den einzelnen Benutzer sind und daher wertvoller für Publisher und werbetreibende Drittparteien sind."
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        [
+          {
+            "t": "text",
+            "v": "__Secure-ROLLOUT_TOKEN (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: 180 Tage. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "__Secure-YEC (YouTube): Speichert die Benutzereinstellungen beim Abruf eines auf anderen Webseiten integrierten Youtube-Videos Speicherdauer: Sitzung. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "__Secure-YNID (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: 180 Tage. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "LAST_RESULT_ENTRY_KEY (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: Sitzung. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "LogsDatabaseV2:V#||LogsRequestsStore (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: Beständig. Typ: IndexedDB."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "ServiceWorkerLogsDatabase#SWHealthLog (YouTube): Notwendig für die Implementierung und Funktionalität von YouTube-Videoinhalten auf der Website. Speicherdauer: Beständig. Typ: IndexedDB."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "TESTCOOKIESENABLED (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: 1 Tag. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "VISITOR_INFO1_LIVE (YouTube): Versucht, die Benutzerbandbreite auf Seiten mit integrierten YouTube-Videos zu schätzen. Speicherdauer: 180 Tage. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "YSC (YouTube): Registriert eine eindeutige ID, um Statistiken der Videos von YouTube, die der Benutzer gesehen hat, zu behalten. Speicherdauer: Sitzung. Typ: HTTP-Cookie."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "yt-icons-last-purged (YouTube): Notwendig für die Implementierung und Funktionalität von YouTube-Videoinhalten auf der Website. Speicherdauer: Beständig. Typ: HTML Local Storage."
+          }
+        ],
+        [
+          {
+            "t": "text",
+            "v": "YtIdbMeta#databases (YouTube): Wird verwendet, um die Interaktion der Nutzer mit eingebetteten Inhalten zu verfolgen. Speicherdauer: Beständig. Typ: IndexedDB."
+          }
+        ]
+      ]
+    }
+  ]
+}

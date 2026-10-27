@@ -1,0 +1,28 @@
+---
+description: Horizontal edge alignment for full-width content sections
+alwaysApply: true
+---
+
+# Section edge alignment (Winter Website)
+
+For full-width content bands (stats, grids, rows of items):
+
+1. Use **10% left and right padding** on the section (`padding-inline: 10%`).
+2. Do **not** use equal `1fr` columns with left-aligned text — the last item will look more inset than the first.
+3. Instead, size items to their content and pin the first/last to the padded edges:
+
+```css
+section {
+  padding-inline: 10%;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(N, max-content);
+  justify-content: space-between;
+  width: 100%;
+}
+```
+
+Result: first block aligns to the left 10% edge, last block to the right 10% edge, same inset on both sides.
+
+Reference implementation: `facts-section` / `facts-grid` in `src/app/globals.css`.
