@@ -162,7 +162,7 @@ export function WinoFloaterSection() {
                 className={`wino-card wino-card--${card.slot} ${active ? "wino-card--visible" : ""} ${parked ? "wino-card--parked" : ""}`}
                 style={
                   {
-                    ...card.style,
+                    ...(card.style as unknown as CSSProperties),
                     "--card-y": `${offsetY}vh`,
                   } as CSSProperties
                 }
