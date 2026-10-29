@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { ObfuscatedEmail } from "@/components/ObfuscatedEmail";
+import { PhoneLink } from "@/components/PhoneLink";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -150,11 +152,9 @@ export function SiteFooter() {
                   8970 Schladming
                 </p>
                 <p>
-                  <a href="mailto:office@makler-winter.at">
-                    office@makler-winter.at
-                  </a>
+                  <ObfuscatedEmail user="office" domain="makler-winter.at" />
                   <br />
-                  <a href="tel:+43368723753">+43 3687 23753</a>
+                  <PhoneLink phone="+43 3687 23753" />
                 </p>
               </div>
 
@@ -170,11 +170,9 @@ export function SiteFooter() {
                   8605 Kapfenberg
                 </p>
                 <p>
-                  <a href="mailto:office@makler-winter.at">
-                    office@makler-winter.at
-                  </a>
+                  <ObfuscatedEmail user="office" domain="makler-winter.at" />
                   <br />
-                  <a href="tel:+43368723753">+43 3687 23753</a>
+                  <PhoneLink phone="+43 3687 23753" />
                 </p>
               </div>
             </div>

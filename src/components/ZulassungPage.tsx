@@ -1,7 +1,15 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type HTMLAttributes,
+  type ReactNode,
+} from "react";
 import { AnimatedLetters } from "@/components/AnimatedLetters";
+import { PhoneLink } from "@/components/PhoneLink";
 import { mapsHref } from "@/lib/contact";
 import {
   zulassungHours,
@@ -16,9 +24,71 @@ const mapsLocation = {
   contactTitle: zulassungHours.contactTitle,
   company: zulassungHours.company,
   address: [zulassungHours.street, zulassungHours.city] as [string, string],
-  email: "",
-  phone: zulassungHours.phone,
 };
+
+function useWhenSeen<T extends HTMLElement>() {
+  const ref = useRef<T>(null);
+  const [seen, setSeen] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setSeen(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setSeen(true);
+        observer.disconnect();
+      },
+      { threshold: 0 },
+    );
+
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return [ref, seen] as const;
+}
+
+function Reveal({
+  as: Tag = "div",
+  className = "",
+  glass = false,
+  delay = 0,
+  children,
+  ...rest
+}: {
+  as?: "div" | "section" | "header";
+  className?: string;
+  glass?: boolean;
+  delay?: number;
+  children: ReactNode;
+} & HTMLAttributes<HTMLElement>) {
+  const [ref, seen] = useWhenSeen<HTMLElement>();
+
+  return (
+    <Tag
+      ref={ref as never}
+      className={[
+        "zulassung-reveal",
+        glass ? "zulassung-reveal--glass" : "",
+        seen ? "is-in" : "",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
+      style={seen ? { transitionDelay: `${delay}ms` } : undefined}
+      {...rest}
+    >
+      {children}
+    </Tag>
+  );
+}
 
 function ToggleIcon({ open }: { open: boolean }) {
   return (
@@ -41,6 +111,11 @@ export function ZulassungPage() {
     Object.fromEntries(zulassungSections.map((section) => [section.id, true])),
   );
   const [activeId, setActiveId] = useState<string>(zulassungToc[0].id);
+  const [hoverId, setHoverId] = useState<string | null>(null);
+  const [markTop, setMarkTop] = useState(12);
+  const [markReady, setMarkReady] = useState(false);
+  const linkRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+  const markId = hoverId ?? activeId;
 
   useEffect(() => {
     const ids = zulassungToc.map((item) => item.id);
@@ -69,6 +144,26 @@ export function ZulassungPage() {
     };
   }, []);
 
+  useLayoutEffect(() => {
+    const link = linkRefs.current[markId];
+    if (!link) return;
+    setMarkTop(link.offsetTop + 12);
+    if (!markReady) {
+      requestAnimationFrame(() => setMarkReady(true));
+    }
+  }, [markId, markReady]);
+
+  useEffect(() => {
+    function place() {
+      const link = linkRefs.current[markId];
+      if (!link) return;
+      setMarkTop(link.offsetTop + 12);
+    }
+
+    window.addEventListener("resize", place);
+    return () => window.removeEventListener("resize", place);
+  }, [markId]);
+
   function jumpTo(id: string) {
     setActiveId(id);
     if (id in open) {
@@ -83,54 +178,70 @@ export function ZulassungPage() {
   return (
     <main className="zulassung-page">
       <div className="zulassung-layout">
+        <div className="zulassung-main">
         <nav className="zulassung-toc" aria-label="Inhalte">
-          <p className="zulassung-toc-label">Inhalte</p>
-          <ul>
-            {zulassungToc.map((item) => {
-              const active = item.id === activeId;
-              return (
-                <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    className={active ? "is-active" : undefined}
-                    aria-current={active ? "true" : undefined}
-                    onClick={(event) => {
-                      event.preventDefault();
-                      jumpTo(item.id);
-                    }}
-                  >
-                    {active ? (
-                      <img
-                        className="zulassung-toc-mark"
-                        src="/images/zulassung/toc-mark.svg"
-                        alt=""
-                        width={16}
-                        height={9}
-                      />
-                    ) : null}
-                    <span>{item.label}</span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="zulassung-toc-panel">
+            <p className="zulassung-toc-label">Inhalte</p>
+            <ul onMouseLeave={() => setHoverId(null)}>
+              <img
+                className={`zulassung-toc-mark${markReady ? " is-ready" : ""}`}
+                src="/images/zulassung/toc-mark.svg"
+                alt=""
+                width={16}
+                height={9}
+                style={{ transform: `translateY(${markTop}px)` }}
+              />
+              {zulassungToc.map((item) => {
+                const active = item.id === activeId;
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      ref={(element) => {
+                        linkRefs.current[item.id] = element;
+                      }}
+                      className={active ? "is-active" : undefined}
+                      aria-current={active ? "true" : undefined}
+                      onMouseEnter={() => setHoverId(item.id)}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        jumpTo(item.id);
+                      }}
+                    >
+                      <span>{item.label}</span>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </nav>
 
         <header className="zulassung-intro">
-          <img
-            className="zulassung-mark"
-            src="/images/home/icons/contact-w.svg"
-            alt=""
-            width={61}
-            height={37}
+          <Reveal delay={0}>
+            <img
+              className="zulassung-mark"
+              src="/images/home/icons/contact-w.svg"
+              alt=""
+              width={61}
+              height={37}
+            />
+          </Reveal>
+          <AnimatedLetters
+            as="p"
+            className="zulassung-eyebrow"
+            text={zulassungIntro.eyebrow}
+            delay={0.06}
+            stagger={0.006}
+            whenVisible
           />
-          <p className="zulassung-eyebrow">{zulassungIntro.eyebrow}</p>
           <AnimatedLetters
             as="h1"
             className="zulassung-title"
             text={zulassungIntro.title}
-            delay={0.12}
+            delay={0.18}
             stagger={0.014}
+            whenVisible
           />
           <div className="zulassung-lead">
             {zulassungIntro.paragraphs.map((paragraph) => (
@@ -179,73 +290,75 @@ export function ZulassungPage() {
             );
           })}
         </div>
-
-      <section
-        id={zulassungHours.id}
-        className="zulassung-band"
-        aria-labelledby="zulassung-hours-title"
-      >
-        <div className="zulassung-band-media" aria-hidden>
-          <img src="/images/zulassung/hills.png" alt="" />
-          <div className="zulassung-band-shade" />
         </div>
 
-        <div className="contact-card-frame contact-card-frame--visible zulassung-hours">
-          <article className="contact-card contact-card--flip">
-            <div className="contact-card-inner">
-              <h2 className="contact-card-title" id="zulassung-hours-title">
-                {zulassungHours.title}
-              </h2>
-              <div className="contact-card-grid">
-                <div className="contact-card-rule" aria-hidden />
-                <div className="contact-card-col">
-                  <h3 className="contact-card-col-title">Bürozeiten</h3>
-                  <p>
-                    {zulassungHours.weekdaysLabel}
-                    <br />
-                    {zulassungHours.weekdays}
-                  </p>
-                  <p>
-                    {zulassungHours.fridayLabel}
-                    <br />
-                    {zulassungHours.friday}
-                  </p>
-                </div>
-                <div className="contact-card-col">
-                  <h3 className="contact-card-col-title">
-                    {zulassungHours.contactTitle}
-                  </h3>
-                  <p>
-                    <a
-                      href={mapsHref(mapsLocation)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {zulassungHours.company}
+        <section
+          id={zulassungHours.id}
+          className="zulassung-band is-in"
+          aria-labelledby="zulassung-hours-title"
+        >
+          <div className="zulassung-band-media" aria-hidden>
+            <img src="/images/home/landscape.jpg?v=3" alt="" />
+            <div className="zulassung-band-shade" />
+          </div>
+
+          <div className="contact-card-frame contact-card-frame--visible zulassung-hours">
+            <article className="contact-card contact-card--flip">
+              <div className="contact-card-inner">
+                <h2 id="zulassung-hours-title" className="contact-card-title">
+                  {zulassungHours.title}
+                </h2>
+                <div className="contact-card-grid">
+                  <div className="contact-card-rule" aria-hidden />
+                  <div className="contact-card-col">
+                    <h3 className="contact-card-col-title">Bürozeiten</h3>
+                    <p>
+                      {zulassungHours.weekdaysLabel}
                       <br />
-                      {zulassungHours.street}
+                      {zulassungHours.weekdays}
+                    </p>
+                    <p>
+                      {zulassungHours.fridayLabel}
                       <br />
-                      {zulassungHours.city}
-                    </a>
-                  </p>
-                  <p className="contact-card-links">
-                    <a href={`tel:${zulassungHours.phone.replace(/\s/g, "")}`}>
-                      {zulassungHours.phone}
-                    </a>
-                  </p>
+                      {zulassungHours.friday}
+                    </p>
+                  </div>
+                  <div className="contact-card-col">
+                    <h3 className="contact-card-col-title">
+                      {zulassungHours.contactTitle}
+                    </h3>
+                    <p>
+                      <a
+                        href={mapsHref(mapsLocation)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {zulassungHours.company}
+                        <br />
+                        {zulassungHours.street}
+                        <br />
+                        {zulassungHours.city}
+                      </a>
+                    </p>
+                    <p className="contact-card-links">
+                      <PhoneLink phone={zulassungHours.phone} />
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
-          <img
-            className="contact-card-outline contact-card-outline--flip"
-            src="/images/home/icons/contact_blocks.svg?v=2"
-            alt=""
-            width={708}
-            height={470}
-          />
-        </div>
-      </section>
+            </article>
+            <img
+              className="contact-card-outline contact-card-outline--flip"
+              src="/images/home/icons/contact_blocks.svg?v=2"
+              alt=""
+              width={708}
+              height={470}
+            />
+          </div>
+          <p className="zulassung-copyright">
+            © 2026 Winter Versicherungsmakler Ges.m.b.H.
+          </p>
+        </section>
       </div>
     </main>
   );

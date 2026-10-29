@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 type AnimatedLettersProps = {
   text: string;
   className?: string;
-  as?: "h1" | "h2" | "p" | "span";
+  as?: "h1" | "h2" | "h3" | "p" | "span";
   id?: string;
   delay?: number;
   stagger?: number;

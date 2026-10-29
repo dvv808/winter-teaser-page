@@ -1,9 +1,13 @@
 import type { ReactNode } from "react";
+import { ObfuscatedEmail } from "@/components/ObfuscatedEmail";
+import { PhoneLink } from "@/components/PhoneLink";
 
 type Part = {
-  t: "text" | "br" | "link" | string;
+  t: "text" | "br" | "link" | "email" | "phone" | string;
   v?: string;
   href?: string;
+  user?: string;
+  domain?: string;
 };
 
 type Block = {
@@ -17,6 +21,16 @@ function Parts({ parts }: { parts: Part[] }) {
   parts.forEach((part, index) => {
     if (part.t === "br") {
       nodes.push(<br key={index} />);
+      return;
+    }
+    if (part.t === "email" && part.user && part.domain) {
+      nodes.push(
+        <ObfuscatedEmail key={index} user={part.user} domain={part.domain} />,
+      );
+      return;
+    }
+    if (part.t === "phone" && part.v) {
+      nodes.push(<PhoneLink key={index} phone={part.v} />);
       return;
     }
     if (part.t === "link" && part.href && part.v) {

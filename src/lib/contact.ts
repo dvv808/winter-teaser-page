@@ -10,17 +10,25 @@ export const officeHours = {
   },
 } as const;
 
+export type EmailAddress = {
+  user: string;
+  domain: string;
+};
+
 export type ContactLocation = {
   id: string;
   name: string;
   contactTitle: string;
   company: string;
   address: [string, string];
-  email: string;
+  email: EmailAddress;
   phone: string;
 };
 
-export function mapsHref(location: ContactLocation) {
+export function mapsHref(location: {
+  company: string;
+  address: readonly [string, string];
+}) {
   const query = [location.company, location.address[0], location.address[1]].join(
     ", ",
   );
@@ -34,7 +42,7 @@ export const contactLocations: ContactLocation[] = [
     contactTitle: "Kontakt Schladming",
     company: "Winter Versicherungsmakler",
     address: ["Obere Klaus 244", "8970 Schladming"],
-    email: "office@makler-winter.at",
+    email: { user: "office", domain: "makler-winter.at" },
     phone: "+43 3687 23753",
   },
   {
@@ -43,7 +51,7 @@ export const contactLocations: ContactLocation[] = [
     contactTitle: "Kontakt Kapfenberg",
     company: "Winter Versicherungsmakler",
     address: ["Wiener Straße 45", "8605 Kapfenberg"],
-    email: "office@makler-winter.at",
+    email: { user: "office", domain: "makler-winter.at" },
     phone: "+43 3687 23753",
   },
 ];

@@ -69,8 +69,8 @@ export const zulassungSections = [
 
 export const zulassungHours = {
   id: "oeffnungszeiten",
-  toc: "Öffnungszeiten & Kontakt",
-  title: "Öffnungszeiten & Kontakt",
+  toc: "Kontakt & Öffnungszeiten",
+  title: "Kontakt & Öffnungszeiten",
   weekdaysLabel: "Montag bis Donnerstag:",
   weekdays: "08:00 - 12:00",
   fridayLabel: "Freitag:",

@@ -7,9 +7,13 @@ import { useScrollHideOnDown } from "@/hooks/useScrollHideOnDown";
 
 type SiteHeaderProps = {
   activeId?: SiteNavActiveId;
+  logo?: "ink" | "light";
 };
 
-export function SiteHeader({ activeId = "home" }: SiteHeaderProps) {
+export function SiteHeader({
+  activeId = "home",
+  logo = "ink",
+}: SiteHeaderProps) {
   const menuVisible = useScrollHideOnDown();
 
   return (
@@ -19,7 +23,11 @@ export function SiteHeader({ activeId = "home" }: SiteHeaderProps) {
         className={`site-page-header-logo site-chrome-reveal ${menuVisible ? "" : "site-chrome-reveal--hidden"}`}
       >
         <Image
-          src="/logos/Winter Logo Ink.svg"
+          src={
+            logo === "light"
+              ? "/logos/Winter Logo.svg"
+              : "/logos/Winter Logo Ink.svg"
+          }
           alt="Winter Versicherungsmakler"
           width={140}
           height={42}

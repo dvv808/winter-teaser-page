@@ -39,7 +39,11 @@
       "parts": [
         {
           "t": "text",
-          "v": "Telefon: 03687/23753"
+          "v": "Telefon: "
+        },
+        {
+          "t": "phone",
+          "v": "03687/23753"
         },
         {
           "t": "br"
@@ -49,9 +53,9 @@
           "v": " E-Mail: "
         },
         {
-          "t": "link",
-          "v": "office@makler-winter.at",
-          "href": "mailto:office@makler-winter.at"
+          "t": "email",
+          "user": "office",
+          "domain": "makler-winter.at"
         }
       ]
     },
@@ -145,7 +149,7 @@
         },
         {
           "t": "text",
-          "v": " Geschäftsführer: Karl Winter, Carl Philip Winter"
+          "v": " Geschäftsführer: Carl Philip Winter"
         }
       ]
     },
@@ -313,8 +317,9 @@
       "type": "p",
       "parts": [
         {
-          "t": "text",
-          "v": "stefan.trojer@oesterreich.gv.at"
+          "t": "email",
+          "user": "stefan.trojer",
+          "domain": "oesterreich.gv.at"
         }
       ]
     },
@@ -323,7 +328,12 @@
       "parts": [
         {
           "t": "text",
-          "v": "Abteilung Gewerberecht: gewerbe@bmdw.gv.at"
+          "v": "Abteilung Gewerberecht: "
+        },
+        {
+          "t": "email",
+          "user": "gewerbe",
+          "domain": "bmdw.gv.at"
         }
       ]
     },
@@ -474,22 +484,30 @@
         },
         {
           "t": "text",
-          "v": " Tel. +43 (3687) 23 753-0"
+          "v": " Tel. "
+        },
+        {
+          "t": "phone",
+          "v": "+43 (3687) 23 753-0"
         },
         {
           "t": "br"
         },
         {
           "t": "text",
-          "v": " Fax +43 (3687) 23 753-450"
+          "v": " Fax "
+        },
+        {
+          "t": "phone",
+          "v": "+43 (3687) 23 753-450"
         },
         {
           "t": "br"
         },
         {
-          "t": "link",
-          "v": "office@makler-winter.at",
-          "href": "mailto:office@makler-winter.at"
+          "t": "email",
+          "user": "office",
+          "domain": "makler-winter.at"
         }
       ]
     },
@@ -525,9 +543,9 @@
           "t": "br"
         },
         {
-          "t": "link",
-          "v": "philip.winter@makler-winter.at",
-          "href": "mailto:philip.winter@makler-winter.at"
+          "t": "email",
+          "user": "philip.winter",
+          "domain": "makler-winter.at"
         }
       ]
     },
@@ -539,9 +557,9 @@
           "v": "Für Fragen zur Verarbeitung Ihrer Daten kontaktieren Sie bitte ab dem 25.05.2018 unsere verantwortliche Abteilung per Post unter der o. a. Adresse mit dem Zusatz „Datenschutz“ oder per E-Mail unter "
         },
         {
-          "t": "link",
-          "v": "office@makler-winter.at",
-          "href": "mailto:office@makler-winter.at"
+          "t": "email",
+          "user": "office",
+          "domain": "makler-winter.at"
         },
         {
           "t": "text",
@@ -1198,14 +1216,23 @@
       "parts": [
         {
           "t": "text",
-          "v": "E-Mail: office@makler-winter.at"
+          "v": "E-Mail: "
+        },
+        {
+          "t": "email",
+          "user": "office",
+          "domain": "makler-winter.at"
         },
         {
           "t": "br"
         },
         {
           "t": "text",
-          "v": " Telefon: +43 (0)3687 / 23753"
+          "v": " Telefon: "
+        },
+        {
+          "t": "phone",
+          "v": "+43 (0)3687 / 23753"
         }
       ]
     },

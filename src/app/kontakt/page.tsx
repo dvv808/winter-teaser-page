@@ -13,7 +13,7 @@ export default function KontaktPage() {
   return (
     <>
       <KontaktPageShell>
-        <SiteHeader activeId="kontakt" />
+        <SiteHeader activeId="kontakt" logo="light" />
         <ContactPageMain />
       </KontaktPageShell>
     </>

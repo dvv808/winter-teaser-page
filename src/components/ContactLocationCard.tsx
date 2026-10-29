@@ -2,6 +2,8 @@
 
 import type { CSSProperties } from "react";
 import { useEffect, useRef, useState } from "react";
+import { ObfuscatedEmail } from "@/components/ObfuscatedEmail";
+import { PhoneLink } from "@/components/PhoneLink";
 import type { ContactLocation } from "@/lib/contact";
 import { mapsHref, officeHours } from "@/lib/contact";
 
@@ -86,10 +88,11 @@ export function ContactLocationCard({
                 </a>
               </p>
               <p className="contact-card-links">
-                <a href={`mailto:${location.email}`}>{location.email}</a>
-                <a href={`tel:${location.phone.replace(/\s/g, "")}`}>
-                  {location.phone}
-                </a>
+                <ObfuscatedEmail
+                  user={location.email.user}
+                  domain={location.email.domain}
+                />
+                <PhoneLink phone={location.phone} />
               </p>
             </div>
           </div>
