@@ -74,7 +74,7 @@ export const zulassungHours = {
   weekdaysLabel: "Montag bis Donnerstag:",
   weekdays: "08:00 - 12:00",
   fridayLabel: "Freitag:",
-  friday: "08:30 - 13:00",
+  friday: "08:00 - 13:00",
   contactTitle: "Kontakt Schladming",
   company: "Winter Versicherungsmakler",
   street: "Obere Klaus 244",
