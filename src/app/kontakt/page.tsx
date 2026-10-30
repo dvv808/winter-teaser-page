@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "Kontakt — Winter Versicherungsmakler",
   description:
-    "Kontaktieren Sie Winter Versicherungsmakler in Schladming und Kapfenberg.",
+    "Wir freuen uns über Ihre Kontaktaufnahme und melden uns umgehend bei Ihnen.",
 };
 
 export default function KontaktPage() {

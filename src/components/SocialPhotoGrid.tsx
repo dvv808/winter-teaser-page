@@ -35,8 +35,24 @@ const socialPhotos = [
   },
 ] as const;
 
+function showVideo(index: number) {
+  return (current: boolean[]) => {
+    if (current[index]) return current;
+    const next = [...current];
+    next[index] = true;
+    return next;
+  };
+}
+
+function playClip(video: HTMLVideoElement) {
+  video.muted = true;
+  const pending = video.play();
+  if (pending) pending.catch(() => {});
+}
+
 export function SocialPhotoGrid() {
   const videos = useRef<(HTMLVideoElement | null)[]>([]);
+  const rowRef = useRef<HTMLDivElement>(null);
   const activeRef = useRef(0);
   const [active, setActive] = useState(0);
   const [hovered, setHovered] = useState<number | null>(null);
@@ -45,27 +61,6 @@ export function SocialPhotoGrid() {
   );
   const [reduced, setReduced] = useState(false);
   const [limit, setLimit] = useState<number>(socialPhotos.length);
-
-  useEffect(() => {
-    const mark = (index: number) => {
-      setReady((current) => {
-        if (current[index]) return current;
-        const next = [...current];
-        next[index] = true;
-        return next;
-      });
-    };
-
-    const cleanups = videos.current.map((video, index) => {
-      if (!video) return () => {};
-      const onReady = () => mark(index);
-      if (video.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA) onReady();
-      video.addEventListener("canplay", onReady);
-      return () => video.removeEventListener("canplay", onReady);
-    });
-
-    return () => cleanups.forEach((cleanup) => cleanup());
-  }, []);
 
   useEffect(() => {
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -100,33 +95,33 @@ export function SocialPhotoGrid() {
   useEffect(() => {
     videos.current.forEach((video, index) => {
       if (!video) return;
-      if (index === playing && ready[index]) {
-        void video.play().catch(() => {});
-      } else {
-        video.pause();
-      }
+      if (index === playing) playClip(video);
+      else video.pause();
     });
-  }, [playing, ready]);
+  }, [playing]);
+
+  useEffect(() => {
+    const row = rowRef.current;
+    if (!row || playing === null) return;
+    const observer = new IntersectionObserver((entries) => {
+      if (!entries.some((entry) => entry.isIntersecting)) return;
+      const video = videos.current[playing];
+      if (video) playClip(video);
+    }, { threshold: 0.25 });
+    observer.observe(row);
+    return () => observer.disconnect();
+  }, [playing]);
 
   useEffect(() => {
     if (reduced || hovered !== null) return;
-    const available = ready.flatMap((isReady, index) =>
-      isReady && index < limit ? [index] : [],
-    );
-    if (available.length < 2) return;
-
     const id = window.setTimeout(() => {
-      setActive((current) => {
-        const position = available.indexOf(current);
-        return available[(position < 0 ? 0 : position + 1) % available.length];
-      });
+      setActive((current) => (current + 1) % limit);
     }, SLOT_MS);
-
     return () => window.clearTimeout(id);
-  }, [active, hovered, reduced, ready, limit]);
+  }, [active, hovered, reduced, limit]);
 
   return (
-    <div className="home-social-photos">
+    <div className="home-social-photos" ref={rowRef}>
       {socialPhotos.map((photo, index) => {
         const isPlaying = playing === index && ready[index];
         return (
@@ -137,9 +132,9 @@ export function SocialPhotoGrid() {
             rel="noopener noreferrer"
             className={isPlaying ? "is-playing" : undefined}
             onPointerEnter={(event) => {
-              if (event.pointerType !== "mouse" || !ready[index]) return;
+              if (event.pointerType !== "mouse") return;
               const video = videos.current[index];
-              if (video) video.currentTime = 0;
+              if (video && video.readyState >= 1) video.currentTime = 0;
               setHovered(index);
             }}
             onPointerLeave={(event) => {
@@ -162,16 +157,10 @@ export function SocialPhotoGrid() {
               muted
               loop
               playsInline
-              preload="auto"
+              autoPlay={index === 0}
+              preload="metadata"
               aria-hidden
-              onCanPlay={() => {
-                setReady((current) => {
-                  if (current[index]) return current;
-                  const next = [...current];
-                  next[index] = true;
-                  return next;
-                });
-              }}
+              onPlaying={() => setReady(showVideo(index))}
             />
           </a>
         );
