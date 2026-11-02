@@ -5,6 +5,7 @@ import {
   useLayoutEffect,
   useRef,
   useState,
+  useSyncExternalStore,
   type HTMLAttributes,
   type ReactNode,
 } from "react";
@@ -26,18 +27,26 @@ const mapsLocation = {
   address: [zulassungHours.street, zulassungHours.city] as [string, string],
 };
 
+const REDUCED_MOTION = "(prefers-reduced-motion: reduce)";
+
+function subscribeReducedMotion(onChange: () => void) {
+  const query = window.matchMedia(REDUCED_MOTION);
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+
 function useWhenSeen<T extends HTMLElement>() {
   const ref = useRef<T>(null);
   const [seen, setSeen] = useState(false);
+  const reduced = useSyncExternalStore(
+    subscribeReducedMotion,
+    () => window.matchMedia(REDUCED_MOTION).matches,
+    () => false,
+  );
 
   useEffect(() => {
     const node = ref.current;
-    if (!node) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setSeen(true);
-      return;
-    }
+    if (!node || reduced) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -50,9 +59,9 @@ function useWhenSeen<T extends HTMLElement>() {
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, []);
+  }, [reduced]);
 
-  return [ref, seen] as const;
+  return [ref, seen || reduced] as const;
 }
 
 function Reveal({

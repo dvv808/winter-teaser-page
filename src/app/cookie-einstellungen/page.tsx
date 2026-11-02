@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CookiePreferences } from "@/components/CookiePreferences";
 import { LegalCopy } from "@/components/LegalCopy";
 import { TextPage } from "@/components/TextPage";
 import legalPages from "@/content/legal-pages.json";
@@ -11,6 +12,7 @@ export default function CookieEinstellungenPage() {
   return (
     <TextPage title="Cookie Einstellungen">
       <LegalCopy blocks={legalPages.cookie} />
+      <CookiePreferences />
     </TextPage>
   );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { SocialOutboundLink } from "@/components/SocialOutboundLink";
 
 const SLOT_MS = 4000;
 
@@ -78,19 +79,16 @@ export function SocialPhotoGrid() {
     };
   }, []);
 
-  useEffect(() => {
-    if (active < limit) return;
-    setActive(0);
-  }, [active, limit]);
-
-  activeRef.current = active;
-  const playing = reduced ? hovered : (hovered ?? active);
+  // On phones only 3 photos show, so an index past the limit falls back to the first.
+  const current = active < limit ? active : 0;
+  const playing = reduced ? hovered : (hovered ?? current);
 
   useEffect(() => {
-    const video = videos.current[active];
+    activeRef.current = current;
+    const video = videos.current[current];
     if (!video || video.readyState < 1) return;
     video.currentTime = 0;
-  }, [active]);
+  }, [current]);
 
   useEffect(() => {
     videos.current.forEach((video, index) => {
@@ -115,7 +113,7 @@ export function SocialPhotoGrid() {
   useEffect(() => {
     if (reduced || hovered !== null) return;
     const id = window.setTimeout(() => {
-      setActive((current) => (current + 1) % limit);
+      setActive((index) => ((index < limit ? index : 0) + 1) % limit);
     }, SLOT_MS);
     return () => window.clearTimeout(id);
   }, [active, hovered, reduced, limit]);
@@ -125,11 +123,9 @@ export function SocialPhotoGrid() {
       {socialPhotos.map((photo, index) => {
         const isPlaying = playing === index && ready[index];
         return (
-          <a
+          <SocialOutboundLink
             key={photo.src}
             href={photo.href}
-            target="_blank"
-            rel="noopener noreferrer"
             className={isPlaying ? "is-playing" : undefined}
             onPointerEnter={(event) => {
               if (event.pointerType !== "mouse") return;
@@ -162,7 +158,7 @@ export function SocialPhotoGrid() {
               aria-hidden
               onPlaying={() => setReady(showVideo(index))}
             />
-          </a>
+          </SocialOutboundLink>
         );
       })}
     </div>

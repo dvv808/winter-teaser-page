@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 type ObfuscatedEmailProps = {
   user: string;
@@ -19,12 +19,12 @@ function fallbackText(user: string, domain: string) {
   return `${user} [at] ${domain.replace(/\./g, " [dot] ")}`;
 }
 
-export function ObfuscatedEmail({ user, domain }: ObfuscatedEmailProps) {
-  const [address, setAddress] = useState<string | null>(null);
+const noopSubscribe = () => () => {};
 
-  useLayoutEffect(() => {
-    setAddress(addressFrom(user, domain));
-  }, [user, domain]);
+export function ObfuscatedEmail({ user, domain }: ObfuscatedEmailProps) {
+  // The server HTML only carries the [at]/[dot] text; the link is built in the browser.
+  const inBrowser = useSyncExternalStore(noopSubscribe, () => true, () => false);
+  const address = inBrowser ? addressFrom(user, domain) : null;
 
   if (!address) {
     return <a>{fallbackText(user, domain)}</a>;

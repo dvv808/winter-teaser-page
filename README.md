@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Winter Versicherungsmakler – Teaser
 
-## Getting Started
+Transitional website for www.makler-winter.at while the new website is being built.
+Next.js (App Router), React and Tailwind; every page is prerendered as static HTML.
 
-First, run the development server:
+## Pages
+
+- `/` – teaser with contact card and social clips
+- `/kontakt` – both locations with office hours
+- `/zulassungsstelle` – registration office: plates, documents, costs, hours
+- `/impressum`, `/datenschutz`, `/cookie-einstellungen`, `/barrierefreiheit` – legal texts
+
+## Content
+
+- Contact data and office hours: `src/lib/contact.ts`
+- Zulassungsstelle content: `src/lib/zulassung.ts`
+- Social links: `src/lib/social.ts`
+- Legal texts: `src/content/legal-pages.json`
+
+## Cookie notice
+
+`src/components/CookieConsent.tsx` stores the visitor's choice in localStorage
+(`winter-consent`, 12 months). Without consent, links to YouTube, Facebook,
+Instagram and LinkedIn show a "Sie verlassen diese Seite" notice first. The
+choice can be changed on `/cookie-einstellungen`.
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before deploying, run `npm run lint` and `npm run build`.

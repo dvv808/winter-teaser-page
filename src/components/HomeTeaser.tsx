@@ -5,6 +5,7 @@ import { AnimatedLetters } from "@/components/AnimatedLetters";
 import { ObfuscatedEmail } from "@/components/ObfuscatedEmail";
 import { PhoneLink } from "@/components/PhoneLink";
 import { SocialIcon } from "@/components/SocialIcon";
+import { SocialOutboundLink } from "@/components/SocialOutboundLink";
 import { SocialPhotoGrid } from "@/components/SocialPhotoGrid";
 import { contactLocations } from "@/lib/contact";
 import { socialLinks } from "@/lib/social";
@@ -155,19 +156,18 @@ export function HomeTeaser() {
               <SocialPhotoGrid />
               <div className="home-social-links">
                 {socialLinks.map((link) => (
-                  <a
+                  <SocialOutboundLink
                     key={link.id}
                     href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     aria-label={link.label}
+                    label={link.label}
                   >
                     <SocialIcon
                       id={link.id}
                       width={link.cardWidth}
                       height={link.cardHeight}
                     />
-                  </a>
+                  </SocialOutboundLink>
                 ))}
               </div>
             </article>

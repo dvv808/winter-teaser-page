@@ -2,18 +2,19 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SocialIcon } from "@/components/SocialIcon";
+import { SocialOutboundLink } from "@/components/SocialOutboundLink";
 import { socialLinks } from "@/lib/social";
 
 const mainLinks = [
   { href: "/", label: "Home", id: "home" },
   { href: "/kontakt", label: "Kontakt", id: "kontakt" },
-  { href: "/zulassungsstelle", label: "Zulassungstelle", id: "zulassung" },
+  { href: "/zulassungsstelle", label: "Zulassungsstelle", id: "zulassung" },
 ] as const;
 
 const menuLinks = [
   { href: "/", label: "Home", id: "home" },
   { href: "/kontakt", label: "Kontakt", id: "kontakt" },
-  { href: "/zulassungsstelle", label: "Zulassungstelle", id: "zulassung" },
+  { href: "/zulassungsstelle", label: "Zulassungsstelle", id: "zulassung" },
 ] as const;
 
 export type SiteNavActiveId = (typeof mainLinks)[number]["id"];
@@ -28,7 +29,6 @@ export function SiteNav({ activeId }: SiteNavProps) {
   const navRef = useRef<HTMLElement>(null);
   const itemRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
   const [pill, setPill] = useState<Pill>({ left: 3, width: 0 });
-  const [ready, setReady] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   function movePillTo(id: string) {
@@ -50,14 +50,9 @@ export function SiteNav({ activeId }: SiteNavProps) {
   }
 
   useEffect(() => {
-    if (!activeId) {
-      setPill({ left: 3, width: 0 });
-      setReady(true);
-      return;
-    }
+    if (!activeId) return;
 
     movePillTo(activeId);
-    setReady(true);
 
     function onResize() {
       if (activeId) movePillTo(activeId);
@@ -145,19 +140,18 @@ export function SiteNav({ activeId }: SiteNavProps) {
         </ul>
         <div className="nav-menu-socials">
           {socialLinks.map((link) => (
-            <a
+            <SocialOutboundLink
               key={link.id}
               href={link.href}
               aria-label={link.label}
-              target="_blank"
-              rel="noopener noreferrer"
+              label={link.label}
             >
               <SocialIcon
                 id={link.id}
                 width={link.navWidth}
                 height={link.navHeight}
               />
-            </a>
+            </SocialOutboundLink>
           ))}
         </div>
       </div>
@@ -168,7 +162,7 @@ export function SiteNav({ activeId }: SiteNavProps) {
         style={{
           width: pill.width,
           transform: `translateX(${pill.left}px)`,
-          opacity: ready && pill.width > 0 ? 1 : 0,
+          opacity: pill.width > 0 ? 1 : 0,
         }}
       />
 
@@ -190,7 +184,7 @@ export function SiteNav({ activeId }: SiteNavProps) {
 
         <div className="nav-socials">
           {socialLinks.map((link) => (
-            <a
+            <SocialOutboundLink
               key={link.id}
               href={link.href}
               ref={(el) => {
@@ -198,8 +192,7 @@ export function SiteNav({ activeId }: SiteNavProps) {
               }}
               className="nav-social"
               aria-label={link.label}
-              target="_blank"
-              rel="noopener noreferrer"
+              label={link.label}
               onMouseEnter={() => movePillToAfterLayout(link.id)}
             >
               <SocialIcon
@@ -207,7 +200,7 @@ export function SiteNav({ activeId }: SiteNavProps) {
                 width={link.navWidth}
                 height={link.navHeight}
               />
-            </a>
+            </SocialOutboundLink>
           ))}
         </div>
       </div>
