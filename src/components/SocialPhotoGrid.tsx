@@ -31,7 +31,7 @@ const socialPhotos = [
     video: "/images/home/social-building.mp4?v=4",
     alt: "Bürogebäude von Winter Versicherungsmakler",
     position: "center 48%",
-    href: "https://www.youtube.com/@makler-winterat",
+    href: "https://www.facebook.com/makler.winter",
   },
 ] as const;
 
